@@ -1,0 +1,28 @@
+table.table-striped > tbody > tr > td {
+    vertical-align: middle;
+border-left: 1px solid #DDD;
+}
+
+.btn {
+  color: white;
+  background-color:transparent
+}
+
+td.level1 {
+  background-color: #88BFFF; color: black;
+}
+
+td.level2 {
+  background-color: #2648FF; color: black;
+}
+
+td.level3 {
+  background-color: #0000CA; color: black;
+}
+
+#ex1Slider .slider-selection {
+	background: #BABABA;
+}
+#ex4Slider .slider-selection {
+	background: #BABABA;
+}
