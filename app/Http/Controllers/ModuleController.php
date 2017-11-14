@@ -32,8 +32,6 @@ class ModuleController extends Controller
 
         //query
         $module = $module::find($id);
-        //$module = $query -> where("modulecode","=",$modulecode);
-        //$module = $query -> get();
 
         return view('matrices.editmodule')
                     ->with('module', $module);

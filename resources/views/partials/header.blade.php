@@ -17,11 +17,13 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Competentie matrices <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href='/competentiematrix/prop'>Propedeuse</a></li>
-            <li><a href='/competentiematrix/se'>Software Engineering</a></li>
-            <li><a href='/competentiematrix/medt')}}'>Mediatechnologie</a></li>
-            <li><a href='/competentiematrix/bdam'>Business Data Management</a></li>
-            <li><a href='/competentiematrix/fict'>Forensische ICT</a></li>
+            <li><a href='/allcompetentiematrices'>Overzicht alle modules</a></li>
+            <li><a href='/competentiematrix/prop'>Eindniveau Propedeuse</a></li>
+            <li><a href='/competentiematrix/se'>Eindniveau Software Engineering</a></li>
+            <li><a href='/competentiematrix/medt')}}'>Eindniveau Mediatechnologie</a></li>
+            <li><a href='/competentiematrix/bdam'>Eindniveau Business Data Management</a></li>
+            <li><a href='/competentiematrix/fict'>Eindniveau Forensische ICT</a></li>
+            <li><a href='/dashboard'>Dashboard</a></li>
           </ul>
         </li>
       </ul>

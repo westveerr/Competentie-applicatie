@@ -19,9 +19,9 @@ Route::get('/', function () {
     ['uses' => 'CompetentieController@getCompetentiematrix',
     'as' => 'competentiematrix']);
 
-    Route::get('allcompetentiematrices',
-      ['uses' => 'CompetentieController@viewAllMatrices',
-      'as' => 'allcompetentiematrices']);
+Route::get('allcompetentiematrices',
+  ['uses' => 'CompetentieController@viewAllMatrices',
+  'as' => 'allcompetentiematrices']);
 
 Route::post('competentiematrix/zoekModule',
     ['uses' => 'CompetentieController@getCompetentiematrixByModule',
@@ -66,3 +66,18 @@ Route::put('editmatrix/{id}',
 Route::get('/viewEindeisen/{modulecode}',
         ['uses' => 'EindeisController@viewEindeisen',
         'as' => 'viewEindeisen']);
+
+Route::get('/editeindeis/{id}',
+        ['uses' => 'EindeisController@editEindeis',
+        'as' => 'editeindeis']);
+
+Route::put('editeindeis/{id}',
+        ['uses' => 'EindeisController@saveEditEindeis',
+        'as' => 'editeindeis']);
+Route::get('neweindeis/{modulecode}',
+        ['uses' => 'EindeisController@newEindeis',
+        'as' => 'neweindeis']);
+
+Route::post('neweindeis',
+        ['uses' => 'EindeisController@saveNewEindeis',
+        'as' => 'neweindeis']);

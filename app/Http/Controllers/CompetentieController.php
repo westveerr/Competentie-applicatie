@@ -70,7 +70,7 @@ class CompetentieController extends Controller
     public function getCompetentiematrixByModule(){
 
         $searchModule = Input::get('searchModule');
-        $this->module = $searchModule ;
+        $this->module = $searchModule;
 
         $this->leerlijn = 'alle';
         $this->periodes = 10;

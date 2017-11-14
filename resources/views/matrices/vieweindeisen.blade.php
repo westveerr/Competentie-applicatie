@@ -20,9 +20,10 @@
             {{ $eindeis['eindeis'] }}
         </td>
         <td>
-          <a href="/editmodule/{{ $module['id'] }}">Wijzigen module</a><br>
-            <a href="/editmatrix/{{ $module['modulecode'] }}">Wijzigen matrix</a><br>
-              <a href="/editmodule/{{ $module['id'] }}">Wijzigen eindeisen</a>
+            {{ $eindeis['eindeissoort'] }}
+        </td>
+        <td>
+              <a href="/editeindeis/{{ $eindeis['id'] }}">Wijzigen</a>
         </td>
       </tr>
       @endforeach
@@ -31,11 +32,13 @@
         <td>
         </td>
         <td>
-          <a href="/newmodule">Nieuwe eindeis</a>
+        </td>
+        <td>
+        </td>
+        <td>
+          <a href="/neweindeis/{{ $modulecode }}">Nieuwe eindeis</a>
         </td>
       </tr>
     </tbody>
   </table>
-
-
 @endsection
