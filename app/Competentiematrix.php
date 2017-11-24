@@ -8,7 +8,7 @@ use Illuminate\Database\Query\Expression;
 
 class Competentiematrix extends Model
 {
-  protected $table = "Competentiematrix";
+  protected $table = "competentiematrix";
 
 
 
