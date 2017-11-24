@@ -222,10 +222,11 @@ class CompetentieController extends Controller
       $querycolumn = $competentielabel . " AS " . $laag;
       $queryModule = $competentie::select('module', $querycolumn );
 
+
       if($specialisatie == 'prop'){
-        $wheremodulequery = "specialisatie ='" . $specialisatie . "' AND '. $competentielabel .' <= (SELECT max(".$competentielabel .") from competentiematrix where specialisatie = '" . $specialisatie . "') AND ". $competentielabel ." > 0 ";
+        $wheremodulequery = "specialisatie ='" . $specialisatie . "' AND '. $competentielabel .' <= (SELECT max(".$competentielabel .") from competentiematrix where specialisatie = '" . $specialisatie . "') AND ". $competentielabel ." > 0  AND periode <= " . $this->periodes;
       } else {
-        $wheremodulequery = "((specialisatie ='" . $specialisatie ."' OR specialisatie = 'prop') OR leerlijn='algmodule') AND '. $competentielabel .' <= (SELECT max(".$competentielabel .") from competentiematrix where specialisatie = '" . $specialisatie . "') AND ". $competentielabel ." > 0 ";
+        $wheremodulequery = "((specialisatie ='" . $specialisatie ."' OR specialisatie = 'prop') OR leerlijn='verp.alg.mod') AND '. $competentielabel .' <= (SELECT max(".$competentielabel .") from competentiematrix where specialisatie = '" . $specialisatie . "' OR specialisatie = 'prop' OR leerlijn='verp.alg.mod') AND ". $competentielabel ." > 0 AND periode <= " . $this->periodes ;
       }
 
       $queryModule -> join('modules', 'modules.modulecode', '=', 'competentiematrix.module');

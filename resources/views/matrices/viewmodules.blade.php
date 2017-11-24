@@ -1,9 +1,11 @@
 
 @extends('layouts.master')
 @section('content')
+
+
   <h1>Beheren module</h1>
 
-  <table class="table table-striped">
+  <table id="modules" class="table table-striped table-bordered" width="100%" cellspacing="0">
     <thead>
       <tr>
         <th></th>

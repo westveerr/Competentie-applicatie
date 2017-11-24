@@ -3,8 +3,25 @@
 @section('content')
   <h1>Overzicht van alle modules</h1>
 
+  <table id="modulematrices" class="table table-striped table-bordered" width="100%" cellspacing="0">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Specialisatie</th>
+        <th>Modulecode</th>
+        <th>Periode</th>
+        <th>Matrix</th>
+        <th>Eindeisen</th>
+      </tr>
+    </thead>
+
     @foreach($allmatrices as $matrix)
-        <b>{{ $matrix->specialisatie }} - {{ $matrix->modulecode }}</b>
+      <tr>
+      <td></td>
+      <td>{{ $matrix->specialisatie }}</td>
+      <td>{{ $matrix->modulecode }}</td>
+      <td>{{ $matrix->periode }}</td>
+      <td>
         <table class="table table-striped">
           <thead>
             <tr>
@@ -159,5 +176,10 @@
             </tr>
           </tbody>
         </table>
+      </td>
+      <td>
+        eindeisen
+      </td>
+    </tr>
       @endforeach
 @endsection

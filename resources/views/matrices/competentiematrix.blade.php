@@ -79,7 +79,7 @@
 
 
     <div>
-      <label for="sel1">Selecteer periode:</label> <input name="periode_slider" id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="{{$periode}}" onChange="javascript:document.forms[1].submit();" />
+      <label for="sel1">Selecteer periode:</label> <input name="periode_slider" id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="{{$periode}}" onChange="javascript:document.forms[0].submit();" />
     </div>
   </form>
 
