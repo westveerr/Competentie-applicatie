@@ -26,7 +26,43 @@
         // With JQuery
           $('#ex1').slider({
         	formatter: function(value) {
-            return 'Periode: ' + value;
+
+            switch(value){
+              case 1:
+                label = 'Propedeuse - P1';
+                break;
+              case 2:
+                label = 'Propedeuse - P2';
+                break;
+              case 3:
+                label = 'Propedeuse - P3';
+                break;
+              case 4:
+                label = 'Propedeuse - P4';
+                break;
+              case 5:
+                label = 'Jaar 2 - P1';
+                break;
+              case 6:
+                label = 'Jaar 2 - P2';
+                break;
+              case 7:
+                label = 'Jaar 2 - P3';
+                break;
+              case 8:
+                label = 'Jaar 2 - P4';
+                break;
+              case 9:
+                label = 'Jaar 3 - P1';
+                break;
+              case 10:
+                label = 'Jaar 3 - P2';
+                break;
+              default:
+                label = 'Periode ' + value;
+            }
+
+            return label;
         	}
         });
       });
@@ -50,8 +86,9 @@
 
     </head>
     <body>
+      <div class="content_wrapper">
         @include('partials.header')
         @yield('content')
-
+      </div>
     </body>
 </html>

@@ -1,6 +1,11 @@
 table.table-striped > tbody > tr > td {
-    vertical-align: middle;
-border-left: 1px solid #DDD;
+  border-left: 1px solid #DDD;
+}
+
+.content_wrapper{
+  width: 1200px;
+  padding: 10px;
+  margin: auto;
 }
 
 .btn {
@@ -8,16 +13,23 @@ border-left: 1px solid #DDD;
   background-color:transparent
 }
 
+td.overview {
+  vertical-align: top !important;
+}
+
 td.level1 {
   background-color: #88BFFF; color: black;
+  text-align: center;
 }
 
 td.level2 {
   background-color: #2648FF; color: black;
+  text-align: center;
 }
 
 td.level3 {
   background-color: #0000CA; color: black;
+  text-align: center;
 }
 
 #ex1Slider .slider-selection {

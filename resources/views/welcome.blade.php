@@ -1,7 +1,8 @@
 
 @extends('layouts.master')
 @section('content')
-  <h1>HBO-i Competentiematrices opleiding Informatica</h1>
+
+<h1>HBO-i Competentiematrices opleiding Informatica</h1>
 
 
 De domeinbeschrijving van de Bachelor of ICT dient als functioneel kwalificatiekader voor hogescholen in samenwerking met werkgevers, gericht op de startbekwaamheid van ict-professionals van de toekomst.

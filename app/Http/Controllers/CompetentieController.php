@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Competentiematrix;
 use App\Module;
+use App\Eindeis;
 
 use Illuminate\Http\Request;
 
@@ -41,6 +42,7 @@ class CompetentieController extends Controller
       $modules = $query ->orderBy('periode', 'ASC')->orderBy('specialisatie', 'ASC')-> get();
 
       $allmatrices = new Collection;
+      $alleindeisen = new Collection;
 
       foreach($modules as $module){
           $this->module = $module->modulecode;
@@ -58,13 +60,19 @@ class CompetentieController extends Controller
           $query -> where('module', '=' , $modulecode);
           $matrix = $query -> get()->first();
 
+
           $allmatrices->push($matrix);
 
       }
 
+      $eindeis = new Eindeis();
+      $queryEindeis = $eindeis::select();
+      $eindeis = $queryEindeis -> get();
+
+
       $returnview = 'matrices.allmatrices';
 
-      return view($returnview, ['allmatrices' => $allmatrices, 'modules' => $modules]);
+      return view($returnview, ['allmatrices' => $allmatrices, 'modules' => $modules, 'eindeisen'=>$eindeis]);
     }
 
     public function getCompetentiematrixByModule(){

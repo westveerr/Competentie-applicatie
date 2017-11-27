@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTableEindeisen extends Migration
+class CreateTableEindeisen2 extends Migration
 {
     /**
      * Run the migrations.
@@ -15,12 +15,12 @@ class CreateTableEindeisen extends Migration
       Schema::create('eindeisen', function (Blueprint $table) {
           $table->increments('id');
           $table->string("modulecode");
-          $table->string("eindeis");
+          $table->text("eindeis");
           $table->string("eindeissoort");
           $table->timestamps();
       });
     }
-  
+
     /**
      * Reverse the migrations.
      *

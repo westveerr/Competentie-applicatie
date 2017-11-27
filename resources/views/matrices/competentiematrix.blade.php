@@ -1,7 +1,17 @@
 
 @extends('layouts.master')
 @section('content')
-  <h1>{{ $specialisatie}}</h1>
+  @if($specialisatie == 'se')
+    <h1>Software Engineering</h1>
+  @elseif($specialisatie == 'medt')
+    <h1>Mediatechnologie</h1>
+  @elseif($specialisatie == 'bdam')
+    <h1>Business Data Management</h1>
+  @elseif($specialisatie == 'fict')
+    <h1>Forensische ICT</h1>
+  @elseif($specialisatie == 'prop')
+    <h1>Propedeuse</h1>
+  @endif
   <table class="table table-striped">
     <thead>
       <tr>
@@ -24,6 +34,7 @@
             @foreach($competentie['BEmodule'] as $bemodule)
               {{$bemodule['module']}} {{$bemodule['be']}}<br>
             @endforeach">
+
               {{ $competentie['BE'] }}
             </button>
           @endif
@@ -79,7 +90,11 @@
 
 
     <div>
-      <label for="sel1">Selecteer periode:</label> <input name="periode_slider" id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="{{$periode}}" onChange="javascript:document.forms[0].submit();" />
+      @if($specialisatie == 'prop')
+        <label for="sel1">Selecteer periode:</label> <input name="periode_slider" id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="4" data-slider-step="1" data-slider-value="{{$periode}}" onChange="javascript:document.forms[0].submit();" />
+      @else
+        <label for="sel1">Selecteer periode:</label> <input name="periode_slider" id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="4" data-slider-max="10" data-slider-step="1" data-slider-value="{{$periode}}" onChange="javascript:document.forms[0].submit();" />
+      @endif
     </div>
   </form>
 

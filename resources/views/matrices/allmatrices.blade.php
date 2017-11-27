@@ -6,9 +6,8 @@
   <table id="modulematrices" class="table table-striped table-bordered" width="100%" cellspacing="0">
     <thead>
       <tr>
-        <th></th>
-        <th>Specialisatie</th>
-        <th>Modulecode</th>
+        <th>Spec</th>
+        <th>Module</th>
         <th>Periode</th>
         <th>Matrix</th>
         <th>Eindeisen</th>
@@ -17,8 +16,7 @@
 
     @foreach($allmatrices as $matrix)
       <tr>
-      <td></td>
-      <td>{{ $matrix->specialisatie }}</td>
+      <td valign="top">{{ $matrix->specialisatie }}</td>
       <td>{{ $matrix->modulecode }}</td>
       <td>{{ $matrix->periode }}</td>
       <td>
@@ -178,8 +176,13 @@
         </table>
       </td>
       <td>
-        eindeisen
+        @foreach($eindeisen as $eindeis)
+          @if($eindeis['modulecode'] ==  $matrix->modulecode )
+            {{$eindeis['eindeis']}}
+            <br>
+          @endif
+        @endforeach
       </td>
     </tr>
-      @endforeach
+    @endforeach
 @endsection
