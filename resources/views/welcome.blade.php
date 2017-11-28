@@ -23,7 +23,7 @@ en beheersingsniveau's. Onderstaande weergave geeft een schematische weergave va
 <br><br>
 <b>Opleiding Informatica</b><br>
 Per specialisatie is door de curriculum commissie vastgesteld wat de te behalen beheersingniveau's zijn (de eindcompetenties).
-Vervolgens is door de curriculum commissie bepaald hoe de competenties van de verschillende modules in  curriculum
+Vervolgens is door de curriculum commissie bepaald hoe de competenties van de verschillende modules in het curriculum
 opleiden tot de eindcompetenties.
 <br><br>
 <b>De competentiedatabase</b><br>
@@ -32,7 +32,7 @@ de eindcompetenties per specialisatie getoond. Het is mogelijk om de opbouw van 
 te volgen per periode en te zien welke modules bijdragen aan de competentie opbouw. Onder de menuoptie Overzicht alle modules worden
 per module de te behalen competenties getoond. Tevens wordt van elke module getoond hoe deze competenties worden behaald in termen
 van eindeisen.
-
+<br><br>
 </template>
 
 
