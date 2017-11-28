@@ -178,7 +178,7 @@
       <td>
         @foreach($eindeisen as $eindeis)
           @if($eindeis['modulecode'] ==  $matrix->modulecode )
-            {{$eindeis['eindeis']}}
+            <li>{{$eindeis['eindeis']}}</li>
             <br>
           @endif
         @endforeach

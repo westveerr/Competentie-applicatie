@@ -27,8 +27,9 @@
       </ul>
       <ul class="nav navbar-nav">
       <li><a href='/allcompetentiematrices'>Overzicht alle modules</a></li>
-      <li><a href='/dashboard'>Dashboard</a></li>
+      <!--<li><a href='/dashboard'>Dashboard</a></li>-->
     </ul>
+    <!--
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Beheren<span class="caret"></span></a>
@@ -40,6 +41,7 @@
           </ul>
         </li>
       </ul>
+    -->
       <ul class="nav navbar-nav navbar-right">
         <span class="logo-lg"><img src="/image/hsleiden_logo2.png" class="img-responsive" ></span>
       </ul>

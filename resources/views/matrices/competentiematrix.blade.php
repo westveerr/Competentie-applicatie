@@ -34,7 +34,6 @@
             @foreach($competentie['BEmodule'] as $bemodule)
               {{$bemodule['module']}} {{$bemodule['be']}}<br>
             @endforeach">
-
               {{ $competentie['BE'] }}
             </button>
           @endif
